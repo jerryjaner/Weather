@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="css/styles.css"/> <!-- static path for public folder is already set in app.js -->
+
+        <style>
+            .Search{
+
+                padding: 20px;
+                margin-right: 10px;
+                width: 350px;
+                font-size: 14px;
+                font-size: 26px !important;
+                border:1px solid lightblue;
+                text-align: center;
+            }
+            h2{
+
+                text-align: center;
+                
+                margin-top: 200px !important;
+            }
+            .btn-search{
+                padding: 26px;
+                background: rgb(68, 112, 207) !important;
+                font-size: 14px !important;
+                 margin-top: 30px !important;
+            }
+            .Search{
+
+                margin-top: 30px !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-content">
+                {{>header}} 
+            <article class="widget">
+                <form class="weatherLocation">
+                    
+                    <input class="Search" placeholder="Search a City" type = "text"/>
+                    <button class="btn-search">Search</button>
+                </form>
+                <div class="weatherIcon" ><i class="wi wi-day-cloudy" style="margin-bottom: 20px;"></i></div>
+                <div class="weatherInfo">
+                    <div class="temperature"><span></span></div>
+                    <div class="description">    
+                        <div class="weatherCondition"></div>    
+                        <div class="place"></div>
+                    </div>
+                </div>
+                <div class="date"></div>
+            </article>
+        </div>
+        <script src="js/app.js"></script> <!-- absolute path -->
+    </body>
+</html>
